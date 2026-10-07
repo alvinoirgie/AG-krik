@@ -580,45 +580,46 @@ Available system routines:
   <span style="color:var(--accent-blue)">clear</span>      - Clear terminal telemetry buffer
 `,
     about: () => `
-<strong style="color:var(--accent-blue)">ARCHITECT IDENTITY:</strong> Alex Rivera
-<strong style="color:var(--accent-violet)">ROLE:</strong> Senior Distributed Systems & Next-Gen Fullstack Architect
-<strong style="color:var(--accent-cyan)">LOCATION:</strong> Global Remote / San Francisco & Asia Pacific
-<strong style="color:var(--text-primary)">MISSION:</strong> Engineering resilient distributed systems, sub-millisecond edge computing,
-         and intuitive spatial interfaces powered by autonomous AI agent grids.
+<strong style="color:var(--accent-blue)">DEVELOPER IDENTITY:</strong> Irgie Alvino
+<strong style="color:var(--accent-violet)">INSTITUTION:</strong> SMKN 2 Surakarta (Rekayasa Perangkat Lunak)
+<strong style="color:var(--accent-cyan)">ROLE:</strong> Programmer & Fullstack Web Developer
+<strong style="color:var(--text-primary)">LOCATION:</strong> Surakarta, Jawa Tengah, Indonesia
+<strong style="color:var(--accent-blue)">MISSION:</strong> Membangun website modern responsif, arsitektur backend yang efisien,
+         dan antarmuka web interaktif masa depan dengan performa optimal.
 `,
     projects: () => `
 <div style="display:flex;flex-direction:column;gap:6px;">
-  <div>[01] <strong style="color:var(--accent-blue)">Hyperion Engine</strong> - Distributed stream mesh (1.2M events/sec, Rust/eBPF)</div>
-  <div>[02] <strong style="color:var(--accent-cyan)">NeuralCanvas Studio</strong> - WebGPU generative shader editor & spatial engine</div>
-  <div>[03] <strong style="color:var(--accent-violet)">Nexus Agent Grid</strong> - Multi-agent autonomous orchestrator with semantic memory</div>
-  <div>[04] <strong style="color:#10b981">QuantumGate Shield</strong> - Zero-trust identity proxy with microsecond overhead</div>
+  <div>[01] <strong style="color:var(--accent-blue)">Hyperion Web Engine</strong> - Realtime stream & socket application</div>
+  <div>[02] <strong style="color:var(--accent-cyan)">NeuralCanvas Studio</strong> - Interactive canvas shader & spatial graphics</div>
+  <div>[03] <strong style="color:var(--accent-violet)">Nexus Agent Grid</strong> - Intelligent automated workflow & assistant</div>
+  <div>[04] <strong style="color:#10b981">QuantumGate Security</strong> - Authentication & school management portal</div>
 </div>
-Type 'help' or click project cards above for architectural blueprints.
+Ketik 'help' atau klik kartu proyek di atas untuk melihat detail arsitektur.
 `,
     skills: () => `
-SYSTEMS & BACKEND:  Rust [95%] | Go [92%] | Kubernetes [90%] | Docker [95%] | eBPF [84%]
-FRONTEND & GRAPHICS: TypeScript [96%] | WebGPU/GLSL [88%] | React/Next [94%] | CSS Glass [98%]
-AI & DATA MESH:      Gemini 3.8 / LLMs [93%] | VectorDB [91%] | Kafka [94%] | Redis [95%]
+FRONTEND & UI:     HTML5/CSS3 [96%] | JavaScript/TypeScript [92%] | React [88%] | Canvas UI [95%]
+BACKEND & SERVER:   Node.js [92%] | PHP/Laravel [88%] | RESTful API [94%] | Python [85%]
+DATABASE & TOOLS:  MySQL [92%] | MongoDB [86%] | Git/GitHub [95%] | Linux CLI [90%]
 `,
     neofetch: () => `
 <span style="color:var(--accent-cyan)">
-       .---.          <strong style="color:var(--text-primary)">alex@kinetic-void</strong>
+       .---.          <strong style="color:var(--text-primary)">irgie@smkn2-solo</strong>
       /     \\         ------------------
-     | () () |        <span style="color:var(--accent-blue)">OS:</span> Arch Linux / KineticVoid 2026.1
-      \\  _  /         <span style="color:var(--accent-blue)">Kernel:</span> Linux 6.18.2-rt-zen
-       \`---\`          <span style="color:var(--accent-blue)">Uptime:</span> 99.998% (2,140 days)
-                      <span style="color:var(--accent-blue)">Shell:</span> zsh 5.9 + Starship
-                      <span style="color:var(--accent-blue)">Terminal:</span> Ghostty / KineticWebTerm
-                      <span style="color:var(--accent-blue)">Primary Stack:</span> Rust, Go, TypeScript, WebGPU, Python
-                      <span style="color:var(--accent-blue)">Memory:</span> 64GB DDR5 ECC
+     | () () |        <span style="color:var(--accent-blue)">OS:</span> Linux / DevStation Solo
+      \\  _  /         <span style="color:var(--accent-blue)">Sekolah:</span> SMK Negeri 2 Surakarta
+       \`---\`          <span style="color:var(--accent-blue)">Jurusan:</span> Rekayasa Perangkat Lunak (RPL)
+                      <span style="color:var(--accent-blue)">Shell:</span> zsh / bash
+                      <span style="color:var(--accent-blue)">Terminal:</span> IrgieWebTerm
+                      <span style="color:var(--accent-blue)">Primary Stack:</span> JavaScript, TypeScript, Node.js, PHP, MySQL
+                      <span style="color:var(--accent-blue)">Status:</span> Open for Projects & Internship
 </span>
 `,
     contact: () => `
-<span style="color:var(--accent-blue)">DIRECT FREQUENCIES:</span>
-  Email:    <a href="mailto:alex@kineticvoid.dev" style="color:var(--accent-cyan)">alex@kineticvoid.dev</a>
-  GitHub:   <a href="https://github.com" target="_blank" style="color:var(--accent-cyan)">github.com/kinetic-void</a>
-  X/Twitter:<a href="https://twitter.com" target="_blank" style="color:var(--accent-cyan)">@kinetic_alex</a>
-  PGP Key:  <code>4B92 A781 92DE C409 119A</code>
+<span style="color:var(--accent-blue)">JALUR KOMUNIKASI RESMI:</span>
+  Email:    <a href="mailto:alvinoirgie@gmail.com" style="color:var(--accent-cyan)">alvinoirgie@gmail.com</a>
+  GitHub:   <a href="https://github.com/alvinoirgie" target="_blank" style="color:var(--accent-cyan)">github.com/alvinoirgie</a>
+  Sekolah:  SMKN 2 Surakarta (Jawa Tengah, Indonesia)
+  Bidang:   Programmer & Fullstack Web Developer
 `,
     ping: () => `
 PING kineticvoid.edge.network (172.64.38.12): 56 data bytes
@@ -660,7 +661,7 @@ round-trip min/avg/max = 11.9/12.4/13.1 ms
 
     const cmdLine = document.createElement('div');
     cmdLine.className = 'term-command-line';
-    cmdLine.innerHTML = `<span class="term-prompt">alex@kinetic-void:~$</span> <span>${escapeHtml(raw)}</span>`;
+    cmdLine.innerHTML = `<span class="term-prompt">irgie@smkn2-solo:~$</span> <span>${escapeHtml(raw)}</span>`;
     entry.appendChild(cmdLine);
 
     if (commands[cmd]) {
@@ -923,7 +924,7 @@ function initTransmissionForm() {
       submitBtn.disabled = false;
       submitBtn.innerHTML = originalText;
       statusBox.className = 'transmission-status success';
-      statusBox.innerHTML = `<span>✔</span> <strong>TRANSMISSION ACKNOWLEDGED (200 OK):</strong> Message ciphered and delivered to Alex Rivera's secure queue. Expect response within 24 standard hours.`;
+      statusBox.innerHTML = `<span>✔</span> <strong>TRANSMISSION ACKNOWLEDGED (200 OK):</strong> Pesan terenkripsi telah diterima oleh Irgie Alvino (SMKN 2 Surakarta). Tanggapan akan segera dikirimkan.`;
       statusBox.style.display = 'flex';
       form.reset();
 

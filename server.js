@@ -35,5 +35,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`⚡ Kinetic Void Developer Portfolio running at: http://localhost:${PORT}`);
+  console.log(`⚡ Irgie Alvino Developer Portfolio (SMKN 2 Surakarta) running at: http://localhost:${PORT}`);
 });

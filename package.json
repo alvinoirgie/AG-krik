@@ -1,21 +1,22 @@
 {
-  "name": "futuristic-developer-portfolio",
+  "name": "irgie-alvino-portfolio",
   "version": "1.0.0",
-  "description": "Futuristic Developer Portfolio - Kinetic Void Design System (Stitch Project 1464120612697715765)",
+  "description": "Futuristic Developer Portfolio - Irgie Alvino (SMKN 2 Surakarta)",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js"
   },
   "keywords": [
+    "irgie-alvino",
+    "smkn-2-surakarta",
     "portfolio",
+    "programmer",
+    "web-developer",
     "cyberpunk",
     "futuristic",
-    "developer-portfolio",
-    "kinetic-void",
-    "webgpu",
     "interactive-terminal"
   ],
-  "author": "Alex Rivera",
+  "author": "Irgie Alvino <alvinoirgie@gmail.com>",
   "license": "MIT"
 }

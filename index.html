@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera // Senior Systems Architect & Fullstack Engineer — Kinetic Void</title>
+  <meta name="description" content="Futuristic developer portfolio of Alex Rivera. Specializing in high-throughput distributed systems, WebGPU spatial interfaces, and autonomous AI agent grids.">
+  <meta name="keywords" content="Distributed Systems, Systems Architect, WebGPU, Rust, Go, TypeScript, AI Agents, Gemini 3.8, Cloud Infrastructure, Developer Portfolio">
+  <meta name="author" content="Alex Rivera">
+
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Alex Rivera // Futuristic Developer Portfolio">
+  <meta property="og:description" content="Kinetic Void — High-throughput distributed systems, WebGPU spatial interfaces, and autonomous AI agent architectures.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22><text y=%2224%22 font-size=%2224%22>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- Ambient Dynamic Canvas & Optical Lighting -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-grid"></div>
+  <div class="ambient-glow-orbs">
+    <div class="orb-1"></div>
+    <div class="orb-2"></div>
+    <div class="orb-3"></div>
+  </div>
+
+  <div class="app-wrapper">
+
+    <!-- ====================================================================
+         NAVIGATION BAR
+         ==================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#hero" class="brand-logo" id="nav-brand">
+          <div class="brand-glyph">KV</div>
+          <div class="brand-text">
+            <span>ALEX.DEV</span><span class="brand-accent">//</span><span class="brand-cursor"></span>
+          </div>
+        </a>
+
+        <!-- Nav Links -->
+        <nav>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#hero" class="nav-link" id="nav-link-home">Core</a></li>
+            <li><a href="#projects" class="nav-link" id="nav-link-projects">Projects</a></li>
+            <li><a href="#terminal" class="nav-link" id="nav-link-terminal">Terminal</a></li>
+            <li><a href="#skills" class="nav-link" id="nav-link-skills">Stack</a></li>
+            <li><a href="#experience" class="nav-link" id="nav-link-experience">Timeline</a></li>
+            <li><a href="#contact" class="nav-link" id="nav-link-contact">Transmit</a></li>
+          </ul>
+        </nav>
+
+        <!-- Actions & Telemetry -->
+        <div class="nav-actions">
+          <button class="audio-toggle-btn" id="audio-toggle" title="Toggle Synthesized Interface Audio">
+            <span>🔇</span> AUDIO: OFF
+          </button>
+          <button class="btn-terminal-quick" id="quick-terminal-btn" title="Open Interactive Cyber Terminal">
+            <span>>_ CLI</span>
+            <span class="kbd-shortcut">⌘K</span>
+          </button>
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- ====================================================================
+         HERO SECTION: THE CYBERNETIC CORE
+         ==================================================================== -->
+    <main>
+      <section class="hero-section" id="hero">
+        <div class="container">
+          <div class="hero-grid">
+            
+            <!-- Hero Left: Typography & Value Proposition -->
+            <div class="hero-left">
+              <div class="hero-eyebrow">
+                <div class="status-pill">
+                  <span class="status-dot-pulse"></span>
+                  OPEN FOR PRINCIPAL & CONTRACT ROLES
+                </div>
+                <div class="telemetry-node">
+                  NODE // <span id="telemetry-ping">14MS</span> • <span id="telemetry-clock">UTC 00:00:00</span>
+                </div>
+              </div>
+
+              <h1 class="hero-title">
+                Architecting <br>
+                <span class="gradient-title-text">Resilient Distributed Meshes</span> <br>
+                & Next-Gen Interfaces.
+              </h1>
+
+              <p class="hero-description">
+                I am Alex Rivera — a Senior Systems Architect & Fullstack Engineer specializing in 
+                sub-millisecond streaming infrastructure, hardware-accelerated WebGPU spatial engines, 
+                and autonomous multi-agent AI coordination grids.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#projects" class="btn-primary" id="hero-btn-projects">
+                  <span>⚡</span> Explore Systems
+                </a>
+                <a href="#terminal" class="btn-secondary" id="hero-btn-terminal">
+                  <span>>_</span> Launch Terminal
+                </a>
+                <a href="#contact" class="btn-secondary" id="hero-btn-contact">
+                  <span>📡</span> Initiate Transmission
+                </a>
+              </div>
+            </div>
+
+            <!-- Hero Right: Interactive 3D Holographic Core -->
+            <div class="hero-right">
+              <div class="holo-card-container">
+                <div class="holo-header">
+                  <div class="window-dots">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                  </div>
+                  <div class="holo-title">SIMULATION // ORBITAL_CORE.V4</div>
+                  <div class="status-pill" style="font-size:0.65rem;padding:0.2rem 0.5rem;">
+                    LIVE
+                  </div>
+                </div>
+
+                <div class="holo-canvas-wrapper">
+                  <canvas id="holo-canvas"></canvas>
+                  <div class="holo-overlay-info">
+                    <span>NODES: 250 (3D SPHERE + RING)</span>
+                    <span id="holo-fps">60 FPS</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Hero Telemetry Metric Ribbon -->
+          <div class="hero-telemetry-ribbon">
+            <div class="telemetry-card">
+              <div class="telemetry-metric"><span class="telemetry-metric-accent">99.998</span>%</div>
+              <div class="telemetry-label">Cluster Availability</div>
+              <div class="telemetry-sub">// Zero-downtime raft consensus across 14 edge zones</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="telemetry-metric"><span class="telemetry-metric-accent">1.2M</span>+</div>
+              <div class="telemetry-label">Events / Second</div>
+              <div class="telemetry-sub">// Sub-millisecond p99 latency via eBPF streaming</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="telemetry-metric"><span class="telemetry-metric-accent">10,000</span>+</div>
+              <div class="telemetry-label">Concurrent AI Agents</div>
+              <div class="telemetry-sub">// Decentralized DAG multi-agent coordination mesh</div>
+            </div>
+
+            <div class="telemetry-card">
+              <div class="telemetry-metric"><span class="telemetry-metric-accent">8</span>+ Yrs</div>
+              <div class="telemetry-label">Production Engineering</div>
+              <div class="telemetry-sub">// High-scale distributed systems, Rust, Go & WebGPU</div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           FEATURED PROJECTS SHOWCASE
+           ==================================================================== -->
+      <section class="section" id="projects">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-tag">ENGINEERED DEPLOYMENTS</div>
+            <h2 class="section-title">Flagship Architectures & Case Studies</h2>
+            <p class="section-subtitle">
+              Mission-critical distributed backends, generative spatial computing tools, and autonomous AI grids.
+            </p>
+          </div>
+
+          <!-- Category Filter Tabs -->
+          <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all" id="filter-all">[ ALL PLATFORMS ]</button>
+            <button class="tab-btn" data-filter="systems" id="filter-systems">[ DISTRIBUTED // SYSTEMS ]</button>
+            <button class="tab-btn" data-filter="ai" id="filter-ai">[ AI // AGENTIC ]</button>
+            <button class="tab-btn" data-filter="graphics" id="filter-graphics">[ SPATIAL // WEBGPU ]</button>
+          </div>
+
+          <!-- Projects Grid -->
+          <div class="projects-grid">
+
+            <!-- Project 1: Hyperion Engine -->
+            <article class="project-card" data-category="systems" id="project-card-1">
+              <div class="project-preview">
+                <canvas id="canvas-proj-1" class="project-canvas-preview"></canvas>
+                <div class="project-badge-overlay">
+                  <span class="status-pill" style="font-size:0.68rem;padding:0.2rem 0.5rem;">
+                    v2.4 STABLE
+                  </span>
+                </div>
+                <div class="project-metric-overlay">
+                  1.2M OPS/SEC • p99: 0.42MS
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-header-row">
+                  <div>
+                    <div class="project-category">DISTRIBUTED STREAMING MESH</div>
+                    <h3 class="project-title">Hyperion Engine</h3>
+                  </div>
+                </div>
+
+                <p class="project-description">
+                  High-performance, zero-copy distributed telemetry and streaming broker written in Rust. 
+                  Leverages kernel-bypass eBPF filters and io_uring ring buffers for ultra-low latency ingestion.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Rust</span>
+                  <span class="tech-tag">eBPF</span>
+                  <span class="tech-tag">io_uring</span>
+                  <span class="tech-tag">gRPC</span>
+                  <span class="tech-tag">Kafka Compatible</span>
+                </div>
+
+                <div class="project-footer">
+                  <button class="project-link-btn open-modal-btn" data-project="proj1" id="btn-deepdive-1">
+                    Architectural Blueprint <span>→</span>
+                  </button>
+                  <div class="project-links-group">
+                    <a href="https://github.com" target="_blank" class="btn-icon-link" title="Source Code" aria-label="GitHub Repository">⌥</a>
+                    <a href="#terminal" class="btn-icon-link" title="CLI Query" aria-label="Query via Terminal">⌘</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 2: NeuralCanvas Studio -->
+            <article class="project-card" data-category="graphics" id="project-card-2">
+              <div class="project-preview">
+                <canvas id="canvas-proj-2" class="project-canvas-preview"></canvas>
+                <div class="project-badge-overlay">
+                  <span class="status-pill" style="font-size:0.68rem;padding:0.2rem 0.5rem;color:var(--accent-cyan);border-color:rgba(6,182,212,0.4);background:rgba(6,182,212,0.1);">
+                    WEBGPU COMPUTE
+                  </span>
+                </div>
+                <div class="project-metric-overlay">
+                  120 FPS 4K • COMPUTE SHADERS
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-header-row">
+                  <div>
+                    <div class="project-category">SPATIAL // GRAPHICS PIPELINE</div>
+                    <h3 class="project-title">NeuralCanvas Studio</h3>
+                  </div>
+                </div>
+
+                <p class="project-description">
+                  Hardware-accelerated generative shader workspace and real-time volumetric raymarcher running directly in modern web browsers via WebGPU compute kernels and WGSL.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tech-tag">TypeScript</span>
+                  <span class="tech-tag">WebGPU</span>
+                  <span class="tech-tag">WGSL</span>
+                  <span class="tech-tag">Three.js</span>
+                  <span class="tech-tag">Wasm</span>
+                </div>
+
+                <div class="project-footer">
+                  <button class="project-link-btn open-modal-btn" data-project="proj2" id="btn-deepdive-2">
+                    Architectural Blueprint <span>→</span>
+                  </button>
+                  <div class="project-links-group">
+                    <a href="https://github.com" target="_blank" class="btn-icon-link" title="Source Code" aria-label="GitHub Repository">⌥</a>
+                    <a href="#terminal" class="btn-icon-link" title="CLI Query" aria-label="Query via Terminal">⌘</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 3: Nexus Agent Grid -->
+            <article class="project-card" data-category="ai" id="project-card-3">
+              <div class="project-preview">
+                <canvas id="canvas-proj-3" class="project-canvas-preview"></canvas>
+                <div class="project-badge-overlay">
+                  <span class="status-pill" style="font-size:0.68rem;padding:0.2rem 0.5rem;color:var(--accent-violet);border-color:rgba(168,85,247,0.4);background:rgba(168,85,247,0.1);">
+                    GEMINI 3.8 FLASH
+                  </span>
+                </div>
+                <div class="project-metric-overlay">
+                  10K CONCURRENT AGENTS
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-header-row">
+                  <div>
+                    <div class="project-category">AUTONOMOUS MULTI-AGENT ORCHESTRATION</div>
+                    <h3 class="project-title">Nexus Agent Grid</h3>
+                  </div>
+                </div>
+
+                <p class="project-description">
+                  Decentralized multi-agent coordinator framework featuring dynamic DAG task decomposition, vector-indexed associative memory, and verifiable audit chains for mission-critical workflows.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Python</span>
+                  <span class="tech-tag">Go</span>
+                  <span class="tech-tag">Gemini 3.8 Flash</span>
+                  <span class="tech-tag">VectorDB</span>
+                  <span class="tech-tag">Redis</span>
+                </div>
+
+                <div class="project-footer">
+                  <button class="project-link-btn open-modal-btn" data-project="proj3" id="btn-deepdive-3">
+                    Architectural Blueprint <span>→</span>
+                  </button>
+                  <div class="project-links-group">
+                    <a href="https://github.com" target="_blank" class="btn-icon-link" title="Source Code" aria-label="GitHub Repository">⌥</a>
+                    <a href="#terminal" class="btn-icon-link" title="CLI Query" aria-label="Query via Terminal">⌘</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Project 4: QuantumGate Shield -->
+            <article class="project-card" data-category="systems" id="project-card-4">
+              <div class="project-preview">
+                <canvas id="canvas-proj-4" class="project-canvas-preview"></canvas>
+                <div class="project-badge-overlay">
+                  <span class="status-pill" style="font-size:0.68rem;padding:0.2rem 0.5rem;">
+                    FIPS 140-3 CERT
+                  </span>
+                </div>
+                <div class="project-metric-overlay">
+                  0.18MS PROXY OVERHEAD
+                </div>
+              </div>
+
+              <div class="project-content">
+                <div class="project-header-row">
+                  <div>
+                    <div class="project-category">ZERO-TRUST SECURITY PROXY</div>
+                    <h3 class="project-title">QuantumGate Shield</h3>
+                  </div>
+                </div>
+
+                <p class="project-description">
+                  Microservice ingress sidecar utilizing WireGuard tunnels and post-quantum Kyber-768 key encapsulation to protect distributed Kubernetes workloads from adversary interception.
+                </p>
+
+                <div class="project-tags">
+                  <span class="tech-tag">Go</span>
+                  <span class="tech-tag">WireGuard</span>
+                  <span class="tech-tag">Envoy Proxy</span>
+                  <span class="tech-tag">Post-Quantum</span>
+                  <span class="tech-tag">Kubernetes</span>
+                </div>
+
+                <div class="project-footer">
+                  <button class="project-link-btn open-modal-btn" data-project="proj4" id="btn-deepdive-4">
+                    Architectural Blueprint <span>→</span>
+                  </button>
+                  <div class="project-links-group">
+                    <a href="https://github.com" target="_blank" class="btn-icon-link" title="Source Code" aria-label="GitHub Repository">⌥</a>
+                    <a href="#terminal" class="btn-icon-link" title="CLI Query" aria-label="Query via Terminal">⌘</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           INTERACTIVE CYBERNETIC TERMINAL
+           ==================================================================== -->
+      <section class="section" id="terminal">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-tag">LIVE DIAGNOSTICS</div>
+            <h2 class="section-title">Quantum Shell & Terminal Emulator</h2>
+            <p class="section-subtitle">
+              Interactive terminal environment. Query architecture telemetry, explore bio, or execute system commands.
+            </p>
+          </div>
+
+          <div class="terminal-wrapper" id="interactive-terminal">
+            <div class="terminal-bar">
+              <div class="window-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <div class="terminal-title-center">
+                <span>⚡</span> alex@kinetic-void:~ (zsh)
+              </div>
+              <div class="terminal-status-badge">
+                SSH://ED25519 • ENCRYPTED
+              </div>
+            </div>
+
+            <div class="terminal-body">
+              <div class="terminal-output" id="terminal-output">
+                <div class="term-welcome">
+                  [SYSTEM INITIALIZED]: Connected to KineticVoid Autonomous Gateway Node 04.
+                </div>
+                <div class="term-ascii">
+   ___     __ _   __      __    _      _ 
+  / _ \   / /| |  \ \    / /   (_)    | |
+ / /_\ \ / /_| |   \ \  / /___  _   __| |
+ |  _  |/ /  | |    \ \/ // _ \| | / _` |
+ | | | / /___| |____ \  /| (_) | || (_| |
+ \_| |_\____/\_____/  \/  \___/|_| \__,_|
+                </div>
+                <div class="term-hint">
+                  Type <strong style="color:var(--accent-blue)">'help'</strong> to list all commands or use the quick chips below.
+                </div>
+              </div>
+
+              <div class="terminal-input-row">
+                <span class="term-prompt">alex@kinetic-void:~$</span>
+                <input type="text" id="terminal-input" class="term-input" placeholder="Type a routine (e.g., 'skills', 'projects', 'neofetch')..." autocomplete="off" spellcheck="false">
+              </div>
+            </div>
+
+            <!-- Quick Command Chips -->
+            <div class="terminal-quick-chips">
+              <span class="chip-label">QUICK ROUTINES:</span>
+              <button class="chip-btn" data-cmd="neofetch">neofetch</button>
+              <button class="chip-btn" data-cmd="skills">skills</button>
+              <button class="chip-btn" data-cmd="projects">projects</button>
+              <button class="chip-btn" data-cmd="about">about</button>
+              <button class="chip-btn" data-cmd="matrix">matrix</button>
+              <button class="chip-btn" data-cmd="ping">ping</button>
+              <button class="chip-btn" data-cmd="clear">clear</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SKILLS & ARCHITECTURE MATRIX
+           ==================================================================== -->
+      <section class="section" id="skills">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-tag">CAPABILITY TELEMETRY</div>
+            <h2 class="section-title">Technical Mastery Matrix</h2>
+            <p class="section-subtitle">
+              Engineered proficiencies refined through production incident triage, large-scale systems design, and bleeding-edge graphics research.
+            </p>
+          </div>
+
+          <div class="skills-matrix-grid">
+
+            <!-- Category 1: Distributed Systems -->
+            <div class="skill-category-card">
+              <div class="skill-card-icon icon-blue">⚙</div>
+              <h3 class="skill-category-title">Distributed Systems</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Rust (Async/Tokio)</span>
+                    <span class="skill-level-pct">95%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Go (Concurrency/gRPC)</span>
+                    <span class="skill-level-pct">92%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>eBPF & Linux Kernel</span>
+                    <span class="skill-level-pct">85%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Kubernetes & Meshes</span>
+                    <span class="skill-level-pct">90%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 2: Spatial & Frontend -->
+            <div class="skill-category-card">
+              <div class="skill-card-icon icon-cyan">❖</div>
+              <h3 class="skill-category-title">Spatial & Web Interfaces</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>TypeScript Architecture</span>
+                    <span class="skill-level-pct">96%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 96%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>WebGPU / GLSL / WGSL</span>
+                    <span class="skill-level-pct">88%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>React / Next.js / Vanilla</span>
+                    <span class="skill-level-pct">94%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Design Tokens & Glass CSS</span>
+                    <span class="skill-level-pct">98%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 98%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 3: AI & Multi-Agent -->
+            <div class="skill-category-card">
+              <div class="skill-card-icon icon-violet">✦</div>
+              <h3 class="skill-category-title">AI & Agentic Systems</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Gemini 3.8 / LLM SDKs</span>
+                    <span class="skill-level-pct">94%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill fill-violet" style="width: 94%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Multi-Agent DAG Workflows</span>
+                    <span class="skill-level-pct">91%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill fill-violet" style="width: 91%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Vector Indexes (HNSW/Qdrant)</span>
+                    <span class="skill-level-pct">89%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill fill-violet" style="width: 89%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Context Cache Engineering</span>
+                    <span class="skill-level-pct">93%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill fill-violet" style="width: 93%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 4: Reliability & Data Mesh -->
+            <div class="skill-category-card">
+              <div class="skill-card-icon icon-emerald">🛡</div>
+              <h3 class="skill-category-title">Data Mesh & Security</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Apache Kafka / Event Sourcing</span>
+                    <span class="skill-level-pct">94%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 94%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>PostgreSQL / Distributed SQL</span>
+                    <span class="skill-level-pct">90%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Zero-Trust mTLS & IAM</span>
+                    <span class="skill-level-pct">87%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 87%;"></div></div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-name-row">
+                    <span>Observability (OTel/Prometheus)</span>
+                    <span class="skill-level-pct">92%</span>
+                  </div>
+                  <div class="skill-bar-track"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           ENGINEERING TIMELINE & EXPERIENCE
+           ==================================================================== -->
+      <section class="section" id="experience">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-tag">CHRONOLOGY</div>
+            <h2 class="section-title">Engineering Trajectory</h2>
+            <p class="section-subtitle">
+              Proven track record of designing high-scale infrastructure and leading mission-critical engineering initiatives.
+            </p>
+          </div>
+
+          <div class="timeline-container">
+            <div class="timeline-conduit"></div>
+            <div class="timeline-items">
+
+              <!-- Role 1 -->
+              <div class="timeline-card">
+                <div class="timeline-node-pin"></div>
+                <div class="timeline-header">
+                  <div class="timeline-role">Principal Systems Architect</div>
+                  <div class="timeline-period">2024 — PRESENT</div>
+                </div>
+                <div class="timeline-company">Vanguard Distributed Labs // Global Cloud Edge</div>
+                <div class="timeline-body">
+                  Lead architect spearheading the next-generation global edge telemetry mesh servicing 45M+ RPCs daily.
+                  <ul class="timeline-bullets">
+                    <li>Migrated legacy Java broker layer to asynchronous Rust + eBPF, slashing p99 latency from 18ms down to 0.42ms.</li>
+                    <li>Designed an autonomous agent grid for self-healing infrastructure orchestration using Gemini 3.8 Flash models.</li>
+                    <li>Saved $1.4M annually in cloud computing costs through zero-copy buffer recycling and memory optimization.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Role 2 -->
+              <div class="timeline-card">
+                <div class="timeline-node-pin"></div>
+                <div class="timeline-header">
+                  <div class="timeline-role">Staff Fullstack & Graphics Engineer</div>
+                  <div class="timeline-period">2021 — 2024</div>
+                </div>
+                <div class="timeline-company">Aether Spatial Media</div>
+                <div class="timeline-body">
+                  Architected collaborative spatial authoring tools utilizing WebGPU, WebSockets, and distributed CRDT synchronization.
+                  <ul class="timeline-bullets">
+                    <li>Engineered custom WebGPU volumetric renderer capable of streaming 60FPS generative fractals and 3D scenes.</li>
+                    <li>Formulated zero-latency conflict-free data types (CRDT) over WebRTC datachannels for collaborative design sessions.</li>
+                    <li>Mentored a cross-functional team of 12 frontend and graphics engineers across 4 international timezones.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Role 3 -->
+              <div class="timeline-card">
+                <div class="timeline-node-pin"></div>
+                <div class="timeline-header">
+                  <div class="timeline-role">Senior Infrastructure Engineer</div>
+                  <div class="timeline-period">2018 — 2021</div>
+                </div>
+                <div class="timeline-company">Nexus Cloud Solutions</div>
+                <div class="timeline-body">
+                  Constructed multi-region Kubernetes clusters and high-availability database replication topologies.
+                  <ul class="timeline-bullets">
+                    <li>Engineered zero-trust service mesh routing layer with Go, Envoy, and automated certificate authority rotation.</li>
+                    <li>Implemented automated failover pipelines achieving five-nines (99.999%) SLA for tier-1 financial transactions.</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TRANSMISSION DECK / CONTACT SECTION
+           ==================================================================== -->
+      <section class="section" id="contact">
+        <div class="container">
+          
+          <div class="section-header">
+            <div class="section-tag">COMMUNICATION UPLINK</div>
+            <h2 class="section-title">Initiate Transmission</h2>
+            <p class="section-subtitle">
+              Available for technical advisory, principal systems roles, or confidential architecture contracts.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+
+            <!-- Direct Channels Card -->
+            <div class="contact-info-card">
+              <div class="status-pill">
+                <span class="status-dot-pulse"></span>
+                ACTIVE COMMS FREQUENCY
+              </div>
+
+              <p class="contact-bio-lead">
+                Whether you need to scale distributed transaction pipelines, pioneer a spatial WebGPU product, 
+                or build autonomous AI agent grids, reach out through direct encrypted channels.
+              </p>
+
+              <div class="direct-channels">
+                <a href="mailto:alex@kineticvoid.dev" class="channel-link">
+                  <div class="channel-icon">✉</div>
+                  <div class="channel-details">
+                    <span class="channel-title">Direct Relay (Email)</span>
+                    <span class="channel-handle">alex@kineticvoid.dev</span>
+                  </div>
+                </a>
+
+                <a href="https://github.com" target="_blank" class="channel-link">
+                  <div class="channel-icon">⌥</div>
+                  <div class="channel-details">
+                    <span class="channel-title">GitHub Profile</span>
+                    <span class="channel-handle">github.com/kinetic-void</span>
+                  </div>
+                </a>
+
+                <a href="https://twitter.com" target="_blank" class="channel-link">
+                  <div class="channel-icon">𝕏</div>
+                  <div class="channel-details">
+                    <span class="channel-title">X / Microblog</span>
+                    <span class="channel-handle">@kinetic_alex</span>
+                  </div>
+                </a>
+
+                <div class="channel-link" style="cursor:default;">
+                  <div class="channel-icon">🔑</div>
+                  <div class="channel-details">
+                    <span class="channel-title">PGP Encryption Fingerprint</span>
+                    <span class="channel-handle" style="font-size:0.7rem;color:var(--accent-cyan);">4B92 A781 92DE C409 119A C820</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Transmission Form Card -->
+            <div class="contact-form-card">
+              <form id="transmission-form">
+                
+                <div class="form-group">
+                  <label class="form-label" for="form-name">
+                    <span>//</span> TRANSMITTER IDENTIFIER (NAME)
+                  </label>
+                  <input type="text" id="form-name" class="form-input" placeholder="e.g. Dr. Elena Vance" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-email">
+                    <span>//</span> RETURN FREQUENCY (EMAIL)
+                  </label>
+                  <input type="email" id="form-email" class="form-input" placeholder="elena@blackmesa.org" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-subject">
+                    <span>//</span> MISSION OBJECTIVE (TOPIC)
+                  </label>
+                  <input type="text" id="form-subject" class="form-input" placeholder="e.g. Distributed Consensus Engine Architecture" required>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="form-message">
+                    <span>//</span> ENCRYPTED PAYLOAD (MESSAGE)
+                  </label>
+                  <textarea id="form-message" class="form-textarea" placeholder="Detail the system parameters, scale requirements, or collaboration goals..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary" id="submit-transmission-btn" style="width:100%;">
+                  <span>⚡</span> Transmit Encrypted Payload
+                </button>
+
+                <div class="transmission-status" id="transmission-status"></div>
+
+              </form>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <!-- ====================================================================
+         ARCHITECTURAL BLUEPRINT MODAL
+         ==================================================================== -->
+    <div class="modal-overlay" id="project-modal">
+      <div class="modal-card">
+        <div class="modal-header">
+          <div>
+            <div id="modal-category" style="font-family:var(--font-code);font-size:0.75rem;color:var(--accent-violet);">
+              CATEGORY
+            </div>
+            <h3 class="modal-title" id="modal-title">System Architecture</h3>
+          </div>
+          <button class="btn-modal-close" id="btn-modal-close" aria-label="Close modal">✕</button>
+        </div>
+
+        <div class="modal-body">
+          <p id="modal-desc" style="font-size:1.1rem;color:var(--text-primary);"></p>
+
+          <div class="modal-tech-box">
+            <h4 style="font-family:var(--font-code);font-size:0.85rem;color:var(--accent-cyan);margin-bottom:0.75rem;">
+              // BENCHMARK TELEMETRY & HARDWARE METRICS
+            </h4>
+            <div id="modal-specs" style="display:flex;flex-direction:column;gap:0.4rem;"></div>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--font-display);font-size:1.15rem;color:var(--text-primary);margin-bottom:0.5rem;">
+              Architectural Breakdown
+            </h4>
+            <p id="modal-deepdive" style="line-height:1.7;color:var(--text-secondary);"></p>
+          </div>
+
+          <div>
+            <h4 style="font-family:var(--font-code);font-size:0.85rem;color:var(--accent-blue);margin-bottom:0.5rem;">
+              // TECHNOLOGY STACK COMPONENT PILLS
+            </h4>
+            <div id="modal-tags" style="display:flex;flex-wrap:wrap;gap:0.5rem;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         FOOTER
+         ==================================================================== -->
+    <footer class="site-footer">
+      <div class="container">
+        
+        <div class="footer-top">
+          <div class="brand-logo">
+            <div class="brand-glyph">KV</div>
+            <div class="brand-text">
+              <span>ALEX RIVERA</span><span class="brand-accent">//</span><span>KINETIC VOID</span>
+            </div>
+          </div>
+
+          <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+            <a href="#hero" class="nav-link">Top</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#terminal" class="nav-link">Terminal</a>
+            <a href="#skills" class="nav-link">Capabilities</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            © 2026 ALEX RIVERA. ALL RIGHTS RESERVED. DESIGN SYSTEM: 
+            <span style="color:var(--accent-blue);">KINETIC VOID</span> (STITCH PROJECT 1464120612697715765).
+          </div>
+          <div>
+            DEPLOYED ON SECURE EDGE • P99 LATENCY: 
+            <span style="color:#10b981;">0.42MS</span>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>

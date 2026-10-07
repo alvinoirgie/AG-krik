@@ -1,0 +1,21 @@
+{
+  "name": "futuristic-developer-portfolio",
+  "version": "1.0.0",
+  "description": "Futuristic Developer Portfolio - Kinetic Void Design System (Stitch Project 1464120612697715765)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "cyberpunk",
+    "futuristic",
+    "developer-portfolio",
+    "kinetic-void",
+    "webgpu",
+    "interactive-terminal"
+  ],
+  "author": "Alex Rivera",
+  "license": "MIT"
+}
